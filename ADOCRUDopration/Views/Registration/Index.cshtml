@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Pages/Registration.js"></script>
+
+<h2>Registration Form</h2>
+
+<div>
+
+
+    <input type="hidden" id="hdnid" name="Id" />
+    <br />
+
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="Enter Your Name" id="txtname" />
+    <br />
+
+    <label>Gender</label>
+    <input type="text" class="form-control" placeholder="Enter Your Address" id="txtgender" />
+    <br />
+
+    <label>MobileNo</label>
+    <input type="text" class="form-control" placeholder="Enter Your Email" id="txtmobile" />
+    <br />
+
+    <label>Address</label>
+    <input type="text" class="form-control" placeholder="Enter Your Gender" id="txtaddress" />
+    <br />
+
+    <label>State</label>
+    <select id="ddlState" class="form-control" onchange="DDLStateCityChange()">
+    </select>
+    <br />
+    <br />
+    <label>City</label>
+    <select id="ddlCity" class="form-control">
+    </select>
+
+    <label>Pincode</label>
+    <input type="text" class="form-control" placeholder="Enter Your Pincode" id="txtpincode" />
+    <br />
+    <label>Email</label>
+    <input type="text" class="form-control" placeholder="Enter Your Email" id="txtemail" />
+    <br />
+    <label>PassWord</label>
+    <input type="text" class="form-control" placeholder="Enter Your Password" id="txtpass" />
+    <br />
+    <label>Hobbies</label>
+    <input type="text" class="form-control" placeholder="Enter Your Hobbies" id="txthobbies" />
+    <br />
+        <button type="submit" id="btnSave" value="submit" class="btn btn-success" onclick="SaveReg()">Submit</button>
+    <br />
+    <br />
+</div>
+<table id="regid" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>MobileNo</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Pincode</th>
+            <th>Email</th>
+            <th>PassWord</th>
+            <th>Hobbies</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
